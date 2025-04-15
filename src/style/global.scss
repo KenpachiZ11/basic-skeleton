@@ -1,0 +1,31 @@
+@use 'sass:map';
+@use './theme' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+
+    body {
+      background-color: map.get($main-colors, pageBg);
+    }
+    
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: map.get($main-colors, pageBg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: map.get($background-colors, btn);
+      border-radius: 2px;
+    }
+
+    // :global {
+
+    // }
+}
