@@ -1,0 +1,79 @@
+@use 'sass:map';
+@use '../../style/theme.scss' as *;
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: map.get($background, Select);
+  border: 1px solid map.get($primary, FocusVisible);
+
+  &:hover {
+    border: 1px solid map.get($btn_primary, Hover);
+  }
+}
+
+.wrapper_disable {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.7;
+  user-select: none;
+  border-color: transparent;
+}
+
+.wrapper_focus {
+  border: 1px solid map.get($btn_primary, Hover);
+}
+
+.wrapper_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: block;
+  transform-origin: top left;
+  font-size: 14px;
+  color: map.get($text, Secondary);
+  transform: translate(22px, 10px);
+  transition: all 0.5s ease;
+}
+
+.wrapper_label__focus {
+  background-color: map.get($background, Default);
+  transition: all 0.5s ease;
+  transform: translate(11px, -10px);
+  padding: 4px 8px;
+  font-size: 8px;
+}
+
+.wrapper_label__requary::after {
+  content: ' *';
+  color: map.get($error, Error-main);
+}
+
+.wrapper_input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: map.get($background, Default);
+  border: 1px solid map.get($background, Default);
+}
+
+.wrapper_input__text {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  cursor: text;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  background-color: map.get($background, Default);
+  color: map.get($text, Primary);
+}

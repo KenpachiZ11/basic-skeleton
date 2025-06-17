@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '../../../style/theme.scss' as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper_block {
+  width: 100%;
+  gap: 10px;
+
+  div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.name,
+    &.territorial_body,
+    &.tag {
+      justify-content: flex-start;
+    }
+  }
+}

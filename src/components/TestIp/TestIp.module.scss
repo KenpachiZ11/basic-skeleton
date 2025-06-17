@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use '../../style/theme.scss' as *;
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper_ip:nth-child(odd) {
+  width: 100%;
+  color: map.get($error, Error-main);
+
+  &::after {
+    content: ' - ошибка';
+  }
+}
+.wrapper_ip:nth-child(even) {
+  width: 100%;
+  color: map.get($success, Success-main);
+  
+  &::after {
+    content: ' - работает';
+  }
+}

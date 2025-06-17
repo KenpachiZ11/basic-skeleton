@@ -17,7 +17,7 @@ module.exports = () => ({
   },
   devServer: {
     static: path.resolve(__dirname, "./public"),
-    port: 3000,
+    port: 3001,
     open: true,
     hot: true,
     historyApiFallback: true
@@ -62,7 +62,7 @@ module.exports = () => ({
         ],
       },
       {
-        test: /\.(png|jpg|gif|JPG)$/,
+        test: /\.(png|webp|jpg|gif|JPG)$/,
         type: 'asset/resource',
       },
       {
@@ -77,15 +77,13 @@ module.exports = () => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./public/index.html"),
+      favicon: path.resolve(__dirname, "./public/favicon.svg")
     }),
-    new MiniCssExtractPlugin({
-      filename: 'styles.css',
-    }),
-    new Dotenv({
-      path: './.env',
-    })
+    new MiniCssExtractPlugin({  filename: 'styles.css' }),
+    new Dotenv({  path: './.env' })
   ],
   optimization: {
+    minimizer: [new CssMinimizerPlugin()],
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {

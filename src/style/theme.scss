@@ -1,3 +1,113 @@
+// Новый кит
+$background: (
+  Default: #313131,     // Фон
+  System: #363636,      // Боковое меню, модальные окна подтверждения
+  Secondary: #333333,   // Дополнительные элементы с подложкой
+  Select: #2E2E2E,      // Выпадающий список элементов
+  Modal: #2A2A2A,       // Информационное модальное окно
+  Backdrop: #121212A6,  // Фон затемнения модального окна
+);
+
+$text: (
+  Primary:#FFFFFF,        // Основной текст, заголовок
+  Secondary:#FFFFFFB2,    // Доп. текст, подзаголовок
+  Disabled:#FFFFFF61,     // Доп. текст с меньшим контрастом
+  DarkContrast:#000000DE, // Текст в залитых нопках
+  LightContrast:#FAFAFA,  // Текст в доп. кнопках
+);
+
+$primary: (
+  Main:#EEEEEE,             // Основные элементы, залитые кнопки
+  Light:#FFFFFF,            // Состояние наведения залитых кнопок
+  Hover:#EEEEEE14,          // Состояние наведения основных элементов 
+  Selected:#EEEEEE1F,       // Состояние выбранного элемента
+  Focus:#EEEEEE29,          // Состояние элемента в фокусе
+  FocusVisible:#EEEEEE4D,   // Состояние элемента в фокусе с виз. выделением
+  OutlineBorder:#EEEEEE80,  // Обводка основных элементов
+);
+
+$secondary: (
+  Main:#737373,             // Доп. элементы
+  Dark:#424242,             // Доп. элементы и кнопки ghost
+  Hover:#73737314,          // Состояние элементов при наведении и кнопки ghost 
+  Selected:#7373731F,       // Состояние выбранного элемента
+  Focus:#73737329,          // Состояние элемента в фокусе
+  FocusVisible:#7373734D,   // Состояние элемента в фокусе с виз. выделением
+  OutlineBorder:#73737380,  // Обводка основных элементов
+  Disabled:#7373733D,       // Недоступные для взаимодействия доп. элементы
+);
+
+$error: (
+  Error-main:#DB3232,         // Залитый фон, иконки, обводка
+  Error-content:#F4C7C7,      // Текст стандартной плашки и с обводкой
+  Error-fill:#160B0B,         // Фон стандартной плашки
+);
+
+$warning: (
+  Warn-main:#ED6C02,          // Залитый фон, иконки, обводка
+  Warn-content:#FFE2B7,       // Текст стандартной плашки и с обводкой
+  Warn-fill:#191207,          // Фон стандартной плашки
+);
+
+$info: (
+  Info-main:#0093E3,          // Залитый фон, иконки, обводка
+  Info-content:#B8E7FB,       // Текст стандартной плашки и с обводкой
+  Info-fill:#071318,          // Фон стандартной плашки
+);
+
+$success: (
+  Success-main:#248952,       // Залитый фон, иконки, обводка
+  Success-content:#CCE8CD,    // Текст стандартной плашки и с обводкой
+  Success-fill:#0C130D,       // Фон стандартной плашки
+);
+
+$btn_primary: (
+  Enable:#FFFFFF,
+  Hover:#FFFFFF,
+  Focused:#EEEEEE29,
+  Disabled:#FFFFFF3D,
+);
+
+$btn_secondary: (
+  Enable:#EEEEEE80,
+  Hover:#EEEEEE14,
+  Focused:#EEEEEE80,
+  Disabled:#FFFFFF3D,
+);
+
+$btn_ghost: (
+  Enable:#424242,
+  Hover:#73737314,
+  Focused:#424242,
+  Disabled:#FFFFFF3D,
+);
+
+$switch: (
+  Enabled:#FFFFFF8F,
+  Hover:#FFFFFF14,            // background circle / padding 10px
+  Focused:#FFFFFF1F,          // background circle / padding 10px
+  Disabled:#FFFFFF3D,
+  Checked:#EEEEEE,
+);
+
+$checked: (
+  Enabled:#FFFFFF8F,
+  Hover:#FFFFFF14,            // background circle / padding 10px
+  Focused:#FFFFFF1F,          // background circle / padding 10px
+  Disabled:#FFFFFF3D,
+  Checked:#EEEEEE,
+);
+
+$dropdown: (
+  Enabled:#73737380,
+  Hover:#FFFFFF,              // 1px border
+  Focused:#EEEEEE,            // 1px border
+  Disabled:#FFFFFF3D,
+  Active:#EEEEEE,             // 1px border
+  DropdownActive:#EEEEEE1F,
+);
+
+// Старый кит
 $main-colors: (
   pageBg: #2e2e2e,
   mainBg: #222,

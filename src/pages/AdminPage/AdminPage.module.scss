@@ -1,0 +1,57 @@
+@use 'sass:map';
+@use '../../style/theme.scss' as *;
+
+.wrapper {
+  width: 100%;
+
+  h3 {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  button {
+    border: none;
+    padding: 8px 32px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: map.get($background-colors, brand);
+      color: map.get($text-colors, brand);
+    }
+  }
+}
+
+.wrapper_info {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: map.get($text, Primary);
+}
+
+.wrapper_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.add_button {
+  padding: 8px 24px;
+  cursor: pointer;
+  background-color: map.get($primary, OutlineBorder);
+  border: 1px solid map.get($secondary, Dark);
+  // color: map.get($text, Primary);
+
+  &:hover {
+    background-color: map.get($secondary, Hover);
+    border: 1px solid map.get($primary, Light);
+    color: map.get($text, Primary);
+  }
+}

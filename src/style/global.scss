@@ -7,9 +7,12 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
 
     body {
-      background-color: map.get($main-colors, pageBg);
+      width: 100%;
+      color: map.get($text, Primary);
     }
     
     ::-webkit-scrollbar {

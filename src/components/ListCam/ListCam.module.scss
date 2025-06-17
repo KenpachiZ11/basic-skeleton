@@ -1,0 +1,58 @@
+.wrapper {
+  // width: 700px;
+  // height: 500px;
+  padding: 20px;
+  // border: 1px solid white;
+  // background-color: red;
+}
+
+.wrapper_list {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wrapper_list__card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid white;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    h6 {
+      text-align: center;
+    }
+  }
+}
+
+.wrapper_no__data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Информация о камере
+// Опасный объект - Лукойл Восток нефть
+// Наименование камеры - Подвал 1
+// Управление камерой - Отсутствует
+// Тип камеры - Стационарная
+// id организации - 0.39664445876066123
+// Подключение к камере
+// ip адресс -127.0.0.1
+// Порт - 8000
+// Тип порта - Основной
+// Контакты пользователя
+// ФИО сотрудника - Петров
+// Должность - Инженер
+// Контактный телефон - 88873
+// Почта - petrov@lukoil.com

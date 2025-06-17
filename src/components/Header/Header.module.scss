@@ -1,0 +1,44 @@
+@use 'sass:map';
+@use '../../style/theme.scss' as *;
+
+.title {
+  // background-color: map.get($background-colors, header);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: map.get($text-colors, header);
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+
+  a {
+    color: map.get($primary, FocusVisible);
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: map.get($text-colors, btn);
+    }
+  }
+}
+
+.information {
+  background-color: map.get($background, Default);
+  color: map.get($primary, FocusVisible);
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    color: map.get($text-colors, btn);
+  }
+}
